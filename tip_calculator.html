@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tip.js"> </script>
+    <style>
+        .background
+        {
+            background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+            /* background: linear-gradient(to top right, #ffccff 27%, #66ffff 100%); */
+            /* height: 100%;
+            width: 100%;
+            background-image: linear-gradient(60deg,cyan,pink,purple);
+            background-repeat: no-repeat;
+            background-size: cover; */
+        }
+        .fcontainer{
+            display: flex;
+            height:50vh;
+            width: auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* background-image: linear-gradient(60deg,cyan,pink,purple); */
+
+        }
+        .h1{
+            align-items: center;
+            justify-content: center;
+        }
+
+        .label{
+            display: block;   
+        }
+        .input{
+            width: 500px;
+            height: 20px;
+        }
+        .b{
+            /* padding-top: 10px; */
+            margin: 10px;
+        }
+    </style>
+    <title>Tip Caluclator</title>
+</head>
+<body class="background">
+    <div class="fcontainer">
+        <div>
+        <h1>TIP CALCULATOR</h1>
+        <label class="label" for="myname">Total Amount Bill:</label>
+        <input class="input"  type="number" id="myname">
+        <br>
+        <label class="label" for="my">Percentage Of Tip:</label>
+        <input class="input"  type="number" id="my">
+        <br>
+        <label class="label" for="three">No. Of Members:</label>
+        <input class="input"  type="number" id="three">
+        <br>
+        <label class="label" for="thr">Total tip:</label>
+        <input class="input"  type="number" id="thr" disabled>
+        <br>
+        <label class="label" for="th">Total bill:</label>
+        <input class="input"  type="number" id="th" disabled>
+        <br>
+        <button onclick="totall()">submit now</button>
+        </div>
+    </div>
+</body>
+</html>
